@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Luxury Emerald Custom Colors */
+  --color-luxury-accent: #10B981;
+  --color-luxury-accent-hover: #059669;
+  --color-luxury-silver: #CBD5E1;
+  --color-luxury-mint: #6EE7B7;
+  
+  /* Obsidian Platinum Dark Theme */
+  --color-luxury-dark-bg: #0A0B0D;
+  --color-luxury-dark-card: #121417;
+  --color-luxury-dark-card-hover: #191B1F;
+  --color-luxury-dark-border: rgba(255, 255, 255, 0.07);
+  --color-luxury-dark-border-hover: rgba(255, 255, 255, 0.15);
+  --color-luxury-dark-text-primary: #F3F4F6;
+  --color-luxury-dark-text-secondary: #9CA3AF;
+  
+  /* Premium Jade Green Light Theme */
+  --color-luxury-light-bg: #F0FDF4;
+  --color-luxury-light-card: #FFFFFF;
+  --color-luxury-light-card-hover: #E6F4EA;
+  --color-luxury-light-border: rgba(16, 185, 129, 0.18);
+  --color-luxury-light-border-hover: rgba(16, 185, 129, 0.35);
+  --color-luxury-light-text-primary: #064E3B;
+  --color-luxury-light-text-secondary: #047857;
+
+  /* Custom Animations */
+  --animate-fade-in-up: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-emerald-shimmer: emerald-shimmer 3s ease-in-out infinite;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes emerald-shimmer {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+/* Custom Base Styles */
+@layer base {
+  body {
+    @apply bg-luxury-light-bg text-luxury-light-text-primary dark:bg-luxury-dark-bg dark:text-luxury-dark-text-primary transition-colors duration-300 font-sans;
+  }
+  
+  /* Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-luxury-accent/20 hover:bg-luxury-accent/40 rounded-full transition-colors;
+  }
+}
+
+/* Premium Utilities */
+.luxury-glass {
+  background: rgba(18, 20, 23, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.luxury-glass-light {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.luxury-text-gradient {
+  background: linear-gradient(135deg, #059669 0%, #10B981 50%, #064E3B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .luxury-text-gradient {
+  background: linear-gradient(135deg, #A7F3D0 0%, #10B981 50%, #6EE7B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-jade-glow {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.08);
+}
+
+.luxury-jade-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+}
