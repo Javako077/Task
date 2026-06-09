@@ -94,19 +94,12 @@ const Sidebar = ({ isOpen, onClose }) => {
               className="flex items-center gap-3 hover:opacity-90 transition-opacity"
               onClick={onClose}
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-luxury-accent-hover via-luxury-accent to-luxury-mint flex items-center justify-center shadow-lg shrink-0">
-                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-                  />
-                </svg>
+              <div className="w-9 h-9 rounded-xl  flex items-center justify-center shadow-lg shrink-0">
+               <img src="/task.png" alt="image"className="w-10 h-10"/>
               </div>
               {!isCollapsed && (
                 <span className="text-xl font-bold luxury-text-gradient whitespace-nowrap animate-fade-in-up">
-                  AuraTask
+                Task Management
                 </span>
               )}
             </NavLink>
@@ -127,7 +120,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             <div>
               {!isCollapsed ? (
                 <h2 className="px-3 text-[10px] font-bold text-luxury-light-text-secondary/70 dark:text-luxury-dark-text-secondary/70 uppercase tracking-widest mb-3 whitespace-nowrap">
-                  Main Menu
+                
                 </h2>
               ) : (
                 <div className="border-b border-luxury-light-border dark:border-luxury-dark-border my-2" />
@@ -184,7 +177,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             <div>
               {!isCollapsed ? (
                 <h2 className="px-3 text-[10px] font-bold text-luxury-light-text-secondary/70 dark:text-luxury-dark-text-secondary/70 uppercase tracking-widest mb-3 whitespace-nowrap">
-                  Apps & Tools
+                
                 </h2>
               ) : (
                 <div className="border-b border-luxury-light-border dark:border-luxury-dark-border my-2" />

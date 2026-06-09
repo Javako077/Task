@@ -184,7 +184,7 @@ const Dashboard = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight text-luxury-light-text-primary dark:text-luxury-dark-text-primary">
-            Hello, {user?.name?.split(' ')[0] || 'User'}! 👋
+            Hello, {user?.name?.split(' ')[0] || 'User'}! 
           </h1>
           <p className="text-luxury-light-text-secondary dark:text-luxury-dark-text-secondary mt-1.5 text-base">
             You have <span className="font-bold text-luxury-accent">{pagination.totalTasks || tasks.length}</span> total tasks. Let's make today productive.

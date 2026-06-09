@@ -38,16 +38,14 @@ const Register = () => {
     <div className="w-full max-w-md space-y-8 bg-luxury-light-card dark:bg-luxury-dark-card p-8 rounded-2xl shadow-xl border border-luxury-light-border dark:border-luxury-dark-border transition-all luxury-jade-glow animate-fade-in-up">
       <div className="flex flex-col items-center">
         {/* Luxury Brand Emblem */}
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-luxury-accent-hover via-luxury-accent to-luxury-mint flex items-center justify-center shadow-lg mb-4">
-          <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-          </svg>
+        <div className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg mb-4">
+          <img src="/task.png" alt="image"className="w-10 h-10"/>
         </div>
         <h2 className="text-3xl font-extrabold tracking-tight luxury-text-gradient">
           Create account
         </h2>
         <p className="mt-2 text-center text-sm text-luxury-light-text-secondary dark:text-luxury-dark-text-secondary">
-          Join AuraTask and start managing your priorities
+          Join Task Management and start managing your priorities
         </p>
       </div>
 
