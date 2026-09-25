@@ -63,7 +63,7 @@ const Register = () => {
               value={formData.name}
               onChange={handleChange}
               className="appearance-none block w-full px-4 py-3 border border-luxury-light-border dark:border-luxury-dark-border rounded-xl placeholder-luxury-light-text-secondary/40 dark:placeholder-luxury-dark-text-secondary/40 bg-luxury-light-card-hover dark:bg-luxury-dark-card-hover text-luxury-light-text-primary dark:text-luxury-dark-text-primary focus:outline-none focus:ring-1 focus:ring-luxury-accent focus:border-luxury-accent transition-all duration-200"
-              placeholder="John Doe"
+              placeholder="Name"
             />
           </div>
           <div>
@@ -78,7 +78,7 @@ const Register = () => {
               value={formData.email}
               onChange={handleChange}
               className="appearance-none block w-full px-4 py-3 border border-luxury-light-border dark:border-luxury-dark-border rounded-xl placeholder-luxury-light-text-secondary/40 dark:placeholder-luxury-dark-text-secondary/40 bg-luxury-light-card-hover dark:bg-luxury-dark-card-hover text-luxury-light-text-primary dark:text-luxury-dark-text-primary focus:outline-none focus:ring-1 focus:ring-luxury-accent focus:border-luxury-accent transition-all duration-200"
-              placeholder="you@example.com"
+              placeholder="email@example.com"
             />
           </div>
           <div>
