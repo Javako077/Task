@@ -1,4 +1,4 @@
-# AntiGravity Time & Task Management System ⏳📈
+# Task Management System ⏳📈
 
 A premium, state-of-the-art productivity application designed with a dark glassmorphism obsidian theme, native ambient audio synthesis, dynamic calendars, and intelligent analytics. Built on the MERN (MongoDB, Express, React, Node.js) stack.
 
